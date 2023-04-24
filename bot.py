@@ -17,6 +17,7 @@ from typing import Union, Optional, AsyncGenerator
 from pyrogram import types
 from plugins import web_server
 
+from plugins.webcode import bot_run
 from os import environ
 from aiohttp import web as webserver
 
