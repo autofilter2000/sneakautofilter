@@ -16,7 +16,6 @@ from utils import temp
 from typing import Union, Optional, AsyncGenerator
 from pyrogram import types
 from aiohttp import web
-
 from plugins import web_server
 
 PORT = "8080"
@@ -53,7 +52,6 @@ class Bot(Client):
         logging.info(LOG_STR)
         
     
-
     async def stop(self, *args):
         await super().stop()
         logging.info("Bot stopped. Bye.")
